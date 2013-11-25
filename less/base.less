@@ -1,0 +1,81 @@
+//
+// Base CSS File - Standard Desktops & CSS Default ~960px
+// --------------------------------------------------
+
+
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 960px;
+@columnCount:    12;
+@gutterRatio:    25%;
+@paddingRatio:   100%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 15px;
+@lineHeight: 140%;
+
+
+// Base Styles
+// -------------------
+
+@import "_reset.less";
+
+@import "_variables.less";
+@import "_mixins.less";
+
+@import "_layout.less";
+@import "_type.less";
+@import "_forms.less";
+@import "_buttons.less";
+@import "_menus.less";
+
+
+// Custom Styles
+// -------------------
+
+main {
+	img {
+		width: 100%;
+	}
+	header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		overflow: hidden;
+		z-index: 1;
+		p {
+			margin: 0;
+			padding: 15px 30px;
+		}
+		.frost-image {
+			background-image: url(../img/background.jpg);
+			background-size: 100%;
+			-webkit-filter: blur(10px);
+			position: absolute;
+			width: 120%;
+			height: 110%;
+			top: -10%;
+			left: -10%;
+			z-index: -2;
+			overflow: hidden;
+		}
+		.frost-color {
+			background-color: white;
+			opacity: .7;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+	}
+}
+
+
+
